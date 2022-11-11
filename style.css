@@ -536,20 +536,22 @@ footer .buttons p {
     width: 1rem;
     margin-left: 5rem;
   }
-  .container2 .cards {
+   .container2 .cards {
     width: 100%;
     margin: 0;
     padding: 0;
     background-color: white;
   }
   .container2 .cards .card {
-    width: 7rem;
-    height: 10rem;
+    width: 10rem;
+    height: 13rem;
     box-sizing: border-box;
     text-align: center;
     border-radius: 10px;
     background-color: white;
     border: 1px solid whitesmoke;
+    margin: 10px;
+    background-color: white;
   }
   .card:hover {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -570,19 +572,19 @@ footer .buttons p {
     height: 30%;
   }
   .container2 .cards .image i {
-    margin-bottom: 4.5rem;
-    margin-left: 5rem;
+    margin-bottom: 6.2rem;
+    margin-left: 7.4rem;
     position: absolute;
     color: grey;
-    font-size: 10px;
+    font-size: 12px;
     overflow: hidden;
   }
   .container2 .cards img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
-    height: 60px;
+    width: 120px;
+    height: 80px;
     text-align: center;
     display: block;
     margin: auto;
@@ -590,10 +592,10 @@ footer .buttons p {
   }
   .container2 .cards .card button {
     position: absolute;
-    margin-right: 5rem;
-    margin-bottom: 4.5rem;
+    margin-right: 7.4rem;
+    margin-bottom: 6.2rem;
     width: 1.5rem;
-    height: 0.8rem;
+    height: 1rem;
     font-size: 0.3rem;
     border-radius: 6px;
     border: 1px solid plum;
@@ -603,31 +605,31 @@ footer .buttons p {
     cursor: pointer;
   }
   .container2 .cards .card-content button {
-    width: 0.8rem;
-    height: 0.8rem;
+    width: 1.2rem;
+    height: 1.2rem;
     position: absolute;
-    margin-left: 2.3rem;
-    margin-top: -0.9rem;
+    margin-left: 3.3rem;
+    margin-top: -1.1rem;
     border-radius: 4px;
     border: 1px solid blueviolet;
     outline: none;
     background-color: blueviolet;
     color: white;
     cursor: pointer;
-    font-size: 5px;
+    font-size: 6px;
     overflow: hidden;
   }
   .container2 .cards .card h3 {
     text-align: left;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     padding-top: 4px;
     margin-left: 5px;
     font-weight: bold;
   }
 
   .container2 .cards .card h5 {
-    margin-top: 0.7rem;
-    font-size: 0.5rem;
+    margin-top: 1rem;
+    font-size: 0.6rem;
     text-align: left;
     margin-left: 5px;
     color: gainsboro;
@@ -635,7 +637,7 @@ footer .buttons p {
   }
   .container2 .cards .card p {
     margin-left: 5px;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     text-align: left;
     font-weight: bold;
   }
