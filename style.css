@@ -542,15 +542,15 @@ footer .buttons p {
     padding: 0;
     background-color: white;
   }
-  .container2 .cards .card {
-    width: 10rem;
-    height: 13rem;
+ .container2 .cards .card {
+    width: 11rem;
+    height: 14rem;
     box-sizing: border-box;
     text-align: center;
     border-radius: 10px;
     background-color: white;
     border: 1px solid whitesmoke;
-    margin: 10px;
+    margin: 10px 5px 5px 5px;
     background-color: white;
   }
   .card:hover {
