@@ -1,0 +1,642 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  width: 100vw;
+  position: relative;
+  display: flex;
+}
+.container1 {
+  width: 15vw;
+  height: 100vh;
+  display: flex;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: fixed;
+  background-color: white;
+}
+.container1 .logo {
+  display: flex;
+  align-items: center;
+  padding: 20px 0 0 30px;
+}
+.container1 .filter-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.filter-content .categories h3 {
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 700px;
+}
+.filter-content .categories li {
+  width: 100%;
+  height: 0.5rem;
+  padding: 15px;
+  list-style: none;
+  align-items: center;
+  color: grey;
+}
+.filter-content .categories li a {
+  color: grey;
+}
+.filter-content .categories li:hover {
+  color: gainsboro;
+}
+.filter-content .categories li a:hover {
+  color: gainsboro;
+}
+.container1 .filter-content .filters nav {
+  background: white;
+  position: relative;
+  width: 9rem;
+  line-height: 10px;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+  margin-top: 2rem;
+  margin-left: 4rem;
+  display: block;
+}
+
+.filter-content .filters nav label {
+  color: black;
+  font-size: 18px;
+  display: block;
+  cursor: pointer;
+  font-weight: bold;
+}
+.filter-content .filters .button span {
+  float: right;
+  line-height: 10px;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+.filter-content .filters nav ul {
+  position: absolute;
+  background: white;
+  width: 100%;
+  list-style: none;
+  left: 0;
+  top: 100%;
+  display: none;
+}
+.filter-content .filters [id^="btn"]:checked + ul {
+  display: block;
+}
+.filter-content .filters nav ul li {
+  line-height: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+.filter-content .filters nav ul li label {
+  font-size: 15px;
+  margin-left: 1rem;
+}
+.filter-content .filters nav ul li a {
+  color: grey;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+}
+.filter-content .filters nav ul li a:hover,
+.filter-content .filters nav ul li label:hover {
+  color: grey;
+}
+.filter-content .filters nav ul ul {
+  position: static;
+}
+.filter-content .filters nav ul ul li {
+  line-height: 10px;
+  margin-left: 0.5rem;
+  border-bottom: none;
+}
+.filter-content .filters nav ul ul li a {
+  color: grey;
+  font-size: 10px;
+}
+.filter-content .filters nav ul li span {
+  font-size: 14px;
+  float: right;
+  padding: 5px;
+  font-weight: bold;
+}
+.filter-content .filters input {
+  display: none;
+}
+.filter-content .filters .input-visible input {
+  display: flex;
+  color: white;
+}
+.filter-content .filters li .input-visible {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: none;
+}
+
+.container2 {
+  width: 85vw;
+  margin-left: 14vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.container2 .navbar .logo {
+  display: none;
+}
+.container2 .navbar {
+  width: 85vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px 30px;
+  position: fixed;
+  z-index: 100;
+}
+.container2 .navbar .search-box {
+  display: flex;
+  align-items: center;
+}
+
+.container2 .navbar .search {
+  width: 18rem;
+  height: 2.5rem;
+  border: 1px solid aliceblue;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 10px 14px;
+}
+.container2 .navbar .search input {
+  outline: none;
+  border: none;
+  font-size: 14px;
+  background-color: aliceblue;
+  color: black;
+}
+.container2 .navbar .search i {
+  color: grey;
+  font-size: 1rem;
+  margin-right: 14px;
+}
+.container2 .navbar .btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container2 .navbar .btns i {
+  font-size: 13px;
+  padding: 5px 5px 5px 5px;
+}
+.container2 .navbar .btns .btn1 button {
+  width: 5rem;
+  height: 2.5rem;
+  font-size: 15px;
+  padding: 5px;
+  font-weight: 400px;
+  cursor: pointer;
+  background-color: white;
+  border: 0.5px solid white;
+  margin-right: 10px;
+}
+.container2 .navbar .btns .btn2 button {
+  width: 6rem;
+  height: 2.5rem;
+  font-size: 12px;
+  font-weight: 100px;
+  cursor: pointer;
+  border: 0.5px solid plum;
+  background-color: plum;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  color: purple;
+  margin-right: 20px;
+}
+.container2 .navbar .btns .btn3 button {
+  width: 6rem;
+  height: 2.5rem;
+  font-size: 12px;
+  font-weight: 400px;
+  cursor: pointer;
+  border: 0.5px solid plum;
+  background-color: plum;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  color: purple;
+  margin-right: 20px;
+}
+.container2 .navbar .btns .btn4 button {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  border: 2px solid aliceblue;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: white;
+}
+
+.container2 .header {
+  width: 85vw;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 30px 0 30px;
+}
+.header .head {
+  font-size: 1.8rem;
+  font-weight: bold;
+  align-items: center;
+}
+.header .input input {
+  width: 12rem;
+  height: 2.5rem;
+  outline: none;
+  border-style: none;
+  border-radius: 10px;
+  background-color: aliceblue;
+  padding: 5.5px;
+  color: gainsboro;
+  font-weight: 700px;
+  align-items: center;
+}
+.container2 .header .menu {
+  width: 2rem;
+  display: none;
+}
+.container2 .header .menuitems {
+  position: relative;
+}
+.header .menu .submenu {
+  width: 130px;
+  font-size: 14px;
+  font-weight: 700;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  display: none;
+  background-color: white;
+  z-index: 100;
+}
+.header .menu .submenuitems {
+  padding: 5px;
+}
+.header .menu .submenuitems ul {
+  list-style: none;
+}
+.header .menu .submenuitems ul li {
+  padding: 10px;
+}
+.header .menu .submenuitems ul li a {
+  text-decoration: none;
+}
+.menuitems:hover .submenu {
+  display: block;
+  background-color: white;
+}
+
+.container2 .cards {
+  width: 85vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow: hidden;
+  color: black;
+  background-color: white;
+}
+.card {
+  width: 15rem;
+  height: 20rem;
+  margin: 1rem 0px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 20px;
+  background-color: white;
+  border: 2px solid whitesmoke;
+}
+.card:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+.card .image {
+  width: 100%;
+  height: 70%;
+  background-color: whitesmoke;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-content {
+  width: 100%;
+  height: 30%;
+}
+.image i {
+  margin-bottom: 9.5rem;
+  margin-left: 12rem;
+  position: absolute;
+  color: grey;
+  font-size: 15px;
+  overflow: hidden;
+}
+img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 120px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  object-fit: contain;
+}
+.card button {
+  position: absolute;
+  margin-right: 12rem;
+  margin-bottom: 9.5rem;
+  width: 2rem;
+  height: 1.5rem;
+  font-size: 0.55rem;
+  border-radius: 8px;
+  border: 1px solid plum;
+  outline: none;
+  background-color: plum;
+  color: purple;
+  cursor: pointer;
+}
+.card-content button {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  margin-left: 4.2rem;
+  margin-top: -1.8rem;
+  border-radius: 4px;
+  border: 1px solid blueviolet;
+  outline: none;
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  overflow: hidden;
+}
+.card h3 {
+  text-align: left;
+  font-size: 1rem;
+  padding-top: 10px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.card h5 {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  text-align: left;
+  margin-left: 10px;
+  color: gainsboro;
+  font-weight: bold;
+}
+.card p {
+  margin-left: 10px;
+  font-size: 0.8rem;
+  text-align: left;
+  padding-top: 0 10px;
+  margin-top: 2px;
+  font-weight: bold;
+}
+footer {
+  width: 85%;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+footer .buttons {
+  position: absolute;
+  text-align: center;
+  padding: 1 rem;
+}
+footer .buttons button {
+  width: 2rem;
+  height: 2rem;
+  font-weight: bold;
+  border: 1px solid aliceblue;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+footer .buttons p {
+  font-size: 0.5rem;
+  font-weight: bold;
+}
+.navbar .arrow {
+  display: none;
+}
+@media (max-width: 769px) {
+  .container1 {
+    display: none;
+  }
+  .container2 {
+    width: 100%;
+    margin-left: 0;
+    display: inline-block;
+  }
+  .container2 .navbar {
+    width: 100%;
+    padding: 15px 15px;
+  }
+  .container2 .navbar .logo {
+    display: none;
+  }
+  .container2 .navbar .search-box .search {
+    width: 40rem;
+  }
+  .navbar .arrow {
+    display: block;
+  }
+  .container2 .btns .btn1 {
+    display: none;
+  }
+  .container2 .btns .btn2 {
+    display: none;
+  }
+  .container2 .btns .btn3 {
+    display: none;
+  }
+  .container2 .btns .btn4 {
+    display: none;
+  }
+
+  .container2 .header {
+    width: 100%;
+  }
+
+  .container2 .header .input {
+    display: none;
+  }
+  .container2 .header .menu {
+    display: block;
+  }
+  .container2 .cards {
+    width: 100%;
+    padding: 15px 15px 0 15px;
+    justify-content: space-evenly;
+  }
+  .container2 .cards .card {
+    margin: 2rem;
+  }
+}
+@media (max-width: 477px) {
+  .container2 {
+    width: 100%;
+  }
+  .container2 .navbar {
+    width: 100%;
+    padding: 15px 15px;
+    justify-content: space-between;
+  }
+  .container2 .navbar .search-box .search {
+    width: 18rem;
+  }
+  .container2 .navbar .search input {
+    width: 15rem;
+  }
+
+  .header {
+    width: 100%;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  .header .head h3 {
+    font-size: 1.5rem;
+  }
+  .header .input input {
+    display: none;
+  }
+  .header .menu {
+    width: 1rem;
+    margin-left: 5rem;
+  }
+  .container2 .cards {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  .container2 .cards .card {
+    width: 7rem;
+    height: 10rem;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid whitesmoke;
+  }
+  .card:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+  }
+  .container2 .cards .card .image {
+    width: 100%;
+    height: 70%;
+    background-color: whitesmoke;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container2 .cards .card-content {
+    width: 100%;
+    height: 30%;
+  }
+  .container2 .cards .image i {
+    margin-bottom: 4.5rem;
+    margin-left: 5rem;
+    position: absolute;
+    color: grey;
+    font-size: 10px;
+    overflow: hidden;
+  }
+  .container2 .cards img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    object-fit: contain;
+  }
+  .container2 .cards .card button {
+    position: absolute;
+    margin-right: 5rem;
+    margin-bottom: 4.5rem;
+    width: 1.5rem;
+    height: 0.8rem;
+    font-size: 0.3rem;
+    border-radius: 6px;
+    border: 1px solid plum;
+    outline: none;
+    background-color: plum;
+    color: purple;
+    cursor: pointer;
+  }
+  .container2 .cards .card-content button {
+    width: 0.8rem;
+    height: 0.8rem;
+    position: absolute;
+    margin-left: 2.3rem;
+    margin-top: -0.9rem;
+    border-radius: 4px;
+    border: 1px solid blueviolet;
+    outline: none;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    font-size: 5px;
+    overflow: hidden;
+  }
+  .container2 .cards .card h3 {
+    text-align: left;
+    font-size: 0.5rem;
+    padding-top: 4px;
+    margin-left: 5px;
+    font-weight: bold;
+  }
+
+  .container2 .cards .card h5 {
+    margin-top: 0.7rem;
+    font-size: 0.5rem;
+    text-align: left;
+    margin-left: 5px;
+    color: gainsboro;
+    font-weight: bold;
+  }
+  .container2 .cards .card p {
+    margin-left: 5px;
+    font-size: 0.5rem;
+    text-align: left;
+    font-weight: bold;
+  }
+}
