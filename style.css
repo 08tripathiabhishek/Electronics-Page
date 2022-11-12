@@ -145,7 +145,7 @@ a {
 
 .container2 {
   width: 85vw;
-  margin-left: 14vw;
+  margin-left: 15vw;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -259,6 +259,7 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 30px 30px 0 30px;
+  background-color: white;
 }
 .header .head {
   font-size: 1.8rem;
@@ -323,6 +324,8 @@ a {
   background-color: white;
 }
 .card {
+  display: flex;
+  flex-direction: column;
   width: 15rem;
   height: 20rem;
   margin: 1rem 0px;
@@ -331,6 +334,7 @@ a {
   border-radius: 20px;
   background-color: white;
   border: 2px solid whitesmoke;
+  flex: wrap;
 }
 .card:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -423,12 +427,13 @@ img {
   font-weight: bold;
 }
 footer {
-  width: 85%;
+  width: 85vw;
   margin: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: white;
 }
 footer .buttons {
   position: absolute;
@@ -451,7 +456,12 @@ footer .buttons p {
 .navbar .arrow {
   display: none;
 }
-@media (max-width: 769px) {
+@media (max-width: 1200px) {
+  .container1 .logo {
+    padding: 10px 0 0 10px;
+  }
+}
+@media (max-width: 945px) {
   .container1 {
     display: none;
   }
@@ -485,7 +495,6 @@ footer .buttons p {
   .container2 .btns .btn4 {
     display: none;
   }
-
   .container2 .header {
     width: 100%;
   }
@@ -498,21 +507,66 @@ footer .buttons p {
   }
   .container2 .cards {
     width: 100%;
-    padding: 15px 15px 0 15px;
-    justify-content: space-evenly;
+    padding: 10px;
   }
   .container2 .cards .card {
-    margin: 2rem;
+    margin: 10px 5px 5px 5px;
   }
 }
-@media (max-width: 477px) {
-  .container2 {
-    width: 100%;
+@media (max-width: 770px) {
+  .container2 .cards {
+    padding: 0px;
+    margin: 0px;
   }
+  .container2 .cards .card {
+    width: 14rem;
+    height: 18rem;
+    margin-top: 10px 4px 4px 4px;
+  }
+  .card button {
+    margin-right: 10rem;
+    margin-bottom: 9rem;
+    width: 1.8rem;
+    height: 1.3rem;
+    font-size: 0.5rem;
+  }
+  .card h5 {
+    margin-top: 1.1rem;
+  }
+  .card-content button {
+    width: 1.55rem;
+    height: 1.55rem;
+    margin-left: 4.2rem;
+    margin-top: -1.6rem;
+    font-size: 10px;
+  }
+  .cards .image i {
+    margin-bottom: 8.8rem;
+    margin-left: 10.8rem;
+  }
+}
+@media (max-width: 700px) {
+  .header .head h3 {
+    font-size: 1.8rem;
+  }
+  .header .menu {
+    width: 1rem;
+    margin-left: 5rem;
+  }
+  .container2 .cards {
+    margin: 0;
+    padding: 0;
+  }
+  .container2 .cards .card {
+    width: 14rem;
+    height: 18rem;
+    border-radius: 10px;
+    margin: 10px 2px 2px 2px;
+  }
+}
+@media (max-width: 685px) {
   .container2 .navbar {
-    width: 100%;
     padding: 15px 15px;
-    justify-content: space-between;
   }
   .container2 .navbar .search-box .search {
     width: 18rem;
@@ -536,13 +590,13 @@ footer .buttons p {
     width: 1rem;
     margin-left: 5rem;
   }
-   .container2 .cards {
+  .container2 .cards {
     width: 100%;
     margin: 0;
     padding: 0;
     background-color: white;
   }
- .container2 .cards .card {
+  .container2 .cards .card {
     width: 11rem;
     height: 14rem;
     box-sizing: border-box;
@@ -640,5 +694,11 @@ footer .buttons p {
     font-size: 0.6rem;
     text-align: left;
     font-weight: bold;
+  }
+}
+@media (max-width: 375px) {
+  .container2 .cards .card {
+    width: 10rem;
+    height: 13rem;
   }
 }
